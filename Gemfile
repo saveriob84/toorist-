@@ -19,6 +19,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'materialize-sass'
 gem 'devise'
+gem "paperclip", "~> 5.0.0"
+
 
 
 
