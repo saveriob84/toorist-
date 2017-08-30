@@ -11,6 +11,16 @@
     </div>
   <% end %>
 
+   <div class="field">
+    <label>Carica il programma dettagliato del tuo tour</label>
+    <br>
+    <br>
+
+    <%= f.file_field :allegato %>
+  </div>
+
+  <br>
+
   <div class="field">
     <%= f.label :titolo %>
     <%= f.text_field :titolo %>
@@ -18,11 +28,11 @@
 
   <div class="field">
     <%= f.label :descrizione %>
-    <%= f.text_area :descrizione %>
+    <%= f.text_area :descrizione, class: "materialize-textarea" %>
   </div>
 
   <div class="field">
-    <%= f.label :price %>
+    <%= f.label :Prezzo_min_50_cent %>
     <%= f.text_field :price %>
   </div>
 
@@ -31,12 +41,12 @@
     <%= f.file_field :cover %>
   </div>
 
-  <div class="field">
-    <%= f.label :allegato %>
-    <%= f.file_field :allegato %>
-  </div>
+  <br>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Salva contenuto' , class:"btn btn-form" %>
   </div>
+
+  <br>
+
 <% end %>

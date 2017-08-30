@@ -1,13 +1,15 @@
 
  @import "materialize";
 
-
  body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
   }
 
+h1 {
+    font-size:3em;
+  }
   main {
     flex: 1 0 auto;
   }
@@ -16,3 +18,29 @@
     width: 100%;
   }
 
+ .show-titolo {
+  margin-top: 0;
+  font-size: 3em;
+  width: 600px;
+}
+
+.show-img {
+  padding-right: 60%;
+}
+
+.show-price
+{
+font-size: 2em;
+}
+
+.btn-form {
+width: 100%;
+}
+
+.card .card-title {
+    font-size: 1.5em;
+    }
+
+.card-image {
+    height: 200px
+    }

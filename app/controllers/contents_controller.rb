@@ -5,7 +5,7 @@ class ContentsController < ApplicationController
 
   
   def index
-    @contents = Content.all
+    @contents = Content.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 7)
   end
 
   
@@ -55,7 +55,7 @@ class ContentsController < ApplicationController
 
   private
     def set_content
-      @content = Content.find(params[:id])
+      @content = Content.friendly.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

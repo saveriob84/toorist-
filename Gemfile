@@ -20,6 +20,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'materialize-sass'
 gem 'devise'
 gem "paperclip", "~> 5.0.0"
+gem 'will_paginate', '~> 3.1.0'
+gem 'will_paginate-materialize'
+gem 'friendly_id', '~> 5.1.0'
 
 
 
